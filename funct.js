@@ -1,11 +1,11 @@
 var comp = ["rock", "paper", "scissors"]
 var playr = ["rock", "paper", "scissors"]
-
+var result = ["win", "tie", "lose"]
 
 
 function rs() {
 
-  var randp = playr[Math.floor(Math.random(1) * playr.length)]
+  var randp = comp[Math.floor(Math.random(1) * comp.length)]
   console.log(randp);
 
   if (randp === "rock") {
@@ -23,7 +23,7 @@ function rs() {
 
 function ps() {
 
-  var randp = playr[Math.floor(Math.random(1) * playr.length)]
+  var randp = comp[Math.floor(Math.random(1) * comp.length)]
   console.log(randp);
   
   if (randp === "rock") {
@@ -41,7 +41,7 @@ function ps() {
 
 function ss() {
 
-  var randp = playr[Math.floor(Math.random(1) * playr.length)]
+  var randp = comp[Math.floor(Math.random(1) * comp.length)]
   console.log(randp);
   
   if (randp === "rock") {
