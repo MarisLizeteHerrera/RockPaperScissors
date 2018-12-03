@@ -1,6 +1,9 @@
 var comp = ["rock", "paper", "scissors"]
 var playr = ["rock", "paper", "scissors"]
-var result = ["win", "tie", "lose"]
+// var resultrs = ["Computer chose Paper, You win!", "Tie!", "You lose!"]
+// var resultps = ["You win!", "Tie!", "You lose!"]
+// var resultss = ["You win!", "Tie!", "You lose!"]
+var result = ["You win!", "Tie!", "You lose!"]
 
 
 function rs() {
@@ -9,15 +12,15 @@ function rs() {
   console.log(randp);
 
   if (randp === "rock") {
-    alert ("Tie!");
+    document.getElementById("winorlose").innerHTML = result[1] + randp;
   }
  
   if (randp === "paper") {
-    alert ("You Lose!");
+    document.getElementById("winorlose").innerHTML = result[2];
   }
   
   if (randp === "scissors") {
-    alert ("You Win!");
+    document.getElementById("winorlose").innerHTML = result[0];
   }
 }
 
@@ -27,15 +30,15 @@ function ps() {
   console.log(randp);
   
   if (randp === "rock") {
-    alert ("Tie!");
+    document.getElementById("winorlose").innerHTML = result[1];
   }
  
   if (randp === "paper") {
-    alert ("You Lose!");
+    document.getElementById("winorlose").innerHTML = result[2];
   }
   
   if (randp === "scissors") {
-    alert ("You Win!");
+    document.getElementById("winorlose").innerHTML = result[0];
   }
 }
 
@@ -45,14 +48,14 @@ function ss() {
   console.log(randp);
   
   if (randp === "rock") {
-    alert ("Tie!");
+    document.getElementById("winorlose").innerHTML = result[1];
   }
  
   if (randp === "paper") {
-    alert ("You Lose!");
+    document.getElementById("winorlose").innerHTML = result[2];
   }
   
   if (randp === "scissors") {
-    alert ("You Win!");
+    document.getElementById("winorlose").innerHTML = result[0];
   }
 }
